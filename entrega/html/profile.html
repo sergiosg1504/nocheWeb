@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>NocheWeb</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="/images/icon.png">
+
+</head>
+
+<body>
+	<form class="full-form">
+		<img src="/images/espacio.png" />
+		<div class="container2">
+			<div class="div-center">
+				<div class="title2">
+					<h1>BIENVENIDO</h1>
+				</div>
+				<form method="POST" action="/cgi-bin/act_pag.cgi">
+					<div class="button2">
+						<button class="btn2" type="submit">
+							<p><strong>Activa la página</strong></p>
+						</button>
+					</div>
+				</form>
+				<form method="POST" action="/cgi-bin/desact_pag.cgi">
+					<div class="button2">
+						<button class="btn2" type="submit">
+							<p><strong>Desctiva la página</strong></p>
+						</button>
+					</div>
+				</form>
+				<form method="POST" action="/cgi-bin/redirect_pag.cgi">
+					<div class="button2">
+						<button class="btn2" type="submit">
+							<p><strong>Ir a la página</strong></p>
+						</button>
+					</div>
+				</form>
+
+			</div>
+	</form>
+</body>
+
+</html>

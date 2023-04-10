@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NocheWeb </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/icon.png">
+</head>
+
+<body>
+    <form action="/cgi-bin/rem_pwd.cgi" method="POST"  class="full-form">
+        <div class="container">
+            <img src="/images/moon.jpeg"  class="img-moon"/>
+            <div class="inputs">
+                <div class="title">
+                    <h1>NOCHEWEB</h1>
+                </div>
+                <div class="options">
+                    <a class="recover">
+                        <strong>Recuperar contraseña</strong>
+                        <hr class="line2" />
+                    </a>
+                </div>
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" name="email" placeholder="&#xf0e0;  Correo electrónico" required
+                            style="font-family: FontAwesome, Arial; font-style: normal"></input>
+                    </div>
+                    <div class="button">
+                        <button class="btn" type="submit">
+                            <p><strong>Recibir email</strong></p>
+                        </button>
+                    </div>
+                    <div class="button">
+                        <a href="index.html" class="forget mar-right">Iniciar sesión
+                        </a>
+                        <a href="registro.html" class="forget mar-left">Registrate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

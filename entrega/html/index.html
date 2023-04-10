@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>NocheWeb</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="icon" href="/images/icon.png">
+</head>
+
+<body>
+	<script>
+		function aviso() {
+		  alert("\n\nIntroduzca su nombre de usuario y la constraseña correpondiente, después pulse 'Iniciar sesión'.\n\nSi aun no se ha registrado pulse el botón 'Registrarte'.\n\nSi se ha olvidado de su contraseña pulse el botón '¿Has olvidado tucontraseña?'");
+		}
+		</script>
+	<button class="aviso" onclick="aviso()">¿Necesitas ayuda?</button>
+	<form method="POST" action="/cgi-bin/login.cgi"  class="full-form">
+		<div class="container">
+			<img src="/images/moon.jpeg"  class="img-moon"/>
+			<div class="inputs">
+				<div class="title">
+					<h1>NOCHEWEB</h1>
+				</div>
+				<div class="options">
+					<a class="signin">
+						<strong>Iniciar sesión</strong>
+						<hr class="line" />
+					</a>
+					<a href="registro.html" class="register" style="color: #7f7f7f">
+						Registrate
+						<hr class="no-line" />
+					</a>
+				</div>
+				<div class="fields">
+					<div class="field">
+						<input type="text" name="username" placeholder="&#xf007;  Nombre de usuario" required
+							style="font-family: FontAwesome, Arial; font-style: normal"></input>
+					</div>
+					<div class="field">
+						<input type="password" name="password" pattern=".{6,}" placeholder="&#xf023;  Contraseña"
+							required style="font-family: FontAwesome, Arial; font-style: normal"></input>
+					</div>
+					<div class="button">
+						<button class="btn" type="submit">
+							<p><strong>Iniciar sesión</strong></p>
+						</button>
+					</div>
+					<div class="button">
+						<a href="rem_pwd.html" class="forget">¿Has olvidado tu contraseña?
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>

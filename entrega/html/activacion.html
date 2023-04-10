@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>NocheWeb</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="icon" href="/images/icon.png">
+
+	<head>
+
+	<body>
+		<script>
+			const p = new URLSearchParams(document.location.search);
+			const user = p.get("user");
+			document.addEventListener('DOMContentLoaded', init, false);
+			function init() {
+				document.getElementById("user").value = user;
+			}
+		</script>
+		<form method="POST" action="/cgi-bin/activacion.cgi" class="full-form">
+
+			<div class="container">
+				<img src="/images/moon.jpeg"  class="img-moon"/>
+				<div class="inputs">
+					<div class="title">
+						<h1>NOCHEWEB</h1>
+					</div>
+					<div class="options">
+						<a class="recover">
+							<strong>Confirmación de registro</strong>
+							<hr class="line2" />
+						</a>
+					</div>
+					<div class="fields">
+						<div class="field">
+							<input type="text" name="id" placeholder="&#xf007;  Nombre de usuario" required
+								style="font-family: FontAwesome, Arial; font-style: normal"></input>
+						</div>
+						<div class="field">
+							<input type="password" name="password" pattern=".{6,}" placeholder="&#xf023;  Contraseña" required
+								style="font-family: FontAwesome, Arial; font-style: normal"></input>
+						</div>
+						<div class="button">
+							<button class="btn" type="submit">
+								<p><strong>Confirmar registro</strong></p>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+
+</html>
